@@ -1,0 +1,456 @@
+QLabel#welcomLab,#informationLab,#currentTimeLab,#totallTimeLab
+{
+    color: white;
+}
+
+/*菜单的样式*/
+QMenu
+{
+     background: url(:/skin/BKImage/1.jpg);
+     margin: 1px;
+}
+QMenu::item
+{
+     padding: 2px 25px 2px 20px;
+     border: 1px solid transparent;
+}
+QMenu::item:selected
+{
+     border-color: darkblue;
+     background: transparent;
+}
+
+
+/*tab的样式*/
+QTabBar::tab
+{
+    background: /*qlineargradient(x1: 0, y1: 0, x2: 5, y2: 1,
+            stop: 0 #ABAFE5, stop: 1 #8588B2);*/
+            url(:/skin/BKImage/1.jpg);
+    border: 1px solid rgb(190, 190, 190);
+    margin-left: -1px;
+    margin-right: -1px;
+
+}
+QTabBar::tab:selected, QTabBar::tab:hover
+{
+    background: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0,
+        stop:0 rgba(39, 117, 219, 255), stop:1 rgba(107, 171, 249, 255));
+}
+/*迷你模式的相关按钮*/
+    /*上一首*/
+QPushButton#miniPreviousBtn
+{
+    border-image: url(:/images/miniprevious.png);
+}
+QPushButton#miniPreviousBtn:hover
+{
+    border-image: url(:/images/miniprevious_hover.png);
+}
+QPushButton#miniPreviousBtn:pressed
+{
+    border-image: url(:/images/miniprevious.png);
+}
+    /*下一首*/
+QPushButton#miniNextBtn
+{
+    border-image: url(:/images/mininext.png);
+}
+QPushButton#miniNextBtn:hover
+{
+    border-image: url(:/images/mininext_hover.png);
+}
+QPushButton#miniNextBtn:pressed
+{
+    border-image: url(:/images/mininext.png);
+}
+
+    /*播放*/
+QPushButton#miniPlayorpauseBtn
+{
+    border-image: url(:/images/miniplay.png);
+}
+QPushButton#miniPlayorpauseBtn:hover
+{
+    border-image: url(:/images/miniplay_hover.png);
+}
+QPushButton#miniPlayorpauseBtn:pressed
+{
+    border-image: url(:/images/miniplay.png);
+}
+    /*home按钮*/
+QPushButton#mainBtn
+{
+    border-image: url(:/images/home.png);
+}
+QPushButton#mainBtn:hover
+{
+    border-image: url(:/images/home_hover.png);
+}
+QPushButton#mainBtn:pressed
+{
+    border-image: url(:/images/home.png);
+}
+/*主框体各类按钮*/
+    /*网络按钮*/
+QPushButton#extensionBtn
+{
+    border-image: url(:/images/extension.png);
+}
+QPushButton#extensionBtn:hover
+{
+    border-image: url(:/images/extension_hover.png);
+}
+    /*迷你模式按钮*/
+
+QPushButton#miniBtn
+{
+    border-image: url(:/images/mini.png);
+}
+QPushButton#miniBtn:hover
+{
+    border-image: url(:/images/mini_hover.png);
+}
+    /*歌词按钮*/
+QPushButton#lrcBtn
+{
+    border-image: url(:/images/ci.png);
+}
+QPushButton#lrcBtn:hover
+{
+    border-image: url(:/images/ci_hover.png);
+}
+QPushButton#lrcBtn:pressed
+{
+    border-image: url(:/images/ci.png);
+}
+    /*音量按钮*/
+QPushButton#volumeBtn
+{
+     border-image: url(:/images/volume.png);
+}
+QPushButton#volumeBtn:hover
+{
+     border-image: url(:/images/volume_hover.png);
+}
+    /*模式按钮*/
+QPushButton#modelBtn::menu-indicator
+{
+     image: None;
+}
+QPushButton#modelBtn
+{
+     border-image: url(:/images/loop.png);
+}
+QPushButton#modelBtn:hover
+{
+     border-image: url(:/images/loop_hover.png);
+}
+QPushButton#modelBtn:pressed
+{
+     border-image: url(:/images/loop.png);
+}
+    /*上一首按钮*/
+QPushButton#previousBtn
+{
+     border-image: url(:/images/previous.png);
+}
+QPushButton#previousBtn:hover
+{
+     border-image: url(:/images/previous_hover.png);
+}
+QPushButton#previousBtn:disabled
+{
+     border-image: url(:/images/previous_hover.png);
+}
+
+    /*播放按钮*/
+QPushButton#playorpauseBtn
+{
+    border-image: url(:/images/play.png);
+}
+QPushButton#playorpauseBtn:hover
+{
+    border-image: url(:/images/play_hover.png);
+}
+QPushButton#playorpauseBtn:pressed
+{
+    border-image: url(:/images/play.png);
+}
+
+    /*下一首按钮*/
+QPushButton#nextBtn
+{
+    border-image: url(:/images/next.png);
+}
+QPushButton#nextBtn:hover
+{
+    border-image: url(:/images/next_hover.png);
+}
+QPushButton#nextBtn:disabled
+{
+    border-image: url(:/images/next_hover.png);
+}
+
+    /*打开文件按钮*/
+QPushButton#openBtn
+{
+    border-image: url(:/images/OpenFile.png);
+}
+QPushButton#openBtn:hover
+{
+    border-image: url(:/images/OpenFile_hover.png);
+}
+QPushButton#openBtn:disabled
+{
+    border-image: url(:/images/OpenFile_hover.png);
+}
+    /*添加文件按钮*/
+QPushButton#addBtn
+{
+    border-image: url(:/images/addfile.png);
+}
+QPushButton#addBtn:hover
+{
+    border-image: url(:/images/addfile_hover.png);
+}
+QPushButton#addBtn:pressed
+{
+    border-image: url(:/images/addfile.png);
+}
+    /*定位按钮*/
+QPushButton#locationBtn
+{
+    border-image: url(:/images/location.png);
+}
+QPushButton#locationBtn:hover
+{
+    border-image: url(:/images/location_hover.png);
+}
+QPushButton#locationBtn:pressed
+{
+    border-image: url(:/images/location.png);
+}
+    /*查找按钮*/
+QPushButton#searchBtn
+{
+    border-image: url(:/images/seacher.png);
+}
+QPushButton#searchBtn:hover
+{
+    border-image: url(:/images/seacher_hover.png);
+}
+QPushButton#searchBtn:pressed
+{
+    border-image: url(:/images/seacher.png);
+}
+    /*下载歌曲按钮*/
+QPushButton#downloadBtn
+{
+    border-image: url(:/images/download.png);
+}
+QPushButton#downloadBtn:hover
+{
+    border-image: url(:/images/download_hover.png);
+}
+QPushButton#downloadBtn:pressed
+{
+    border-image: url(:/images/download.png);
+}
+    /*最小化按钮*/
+QPushButton#minBtn
+{
+    border-image: url(:/images/min.png);
+}
+QPushButton#minBtn:hover
+{
+    border-image: url(:/images/min_hover.png);
+}
+QPushButton#minBtn:pressed
+{
+    border-image: url(:/images/min.png);
+}
+    /*关闭按钮*/
+QPushButton#closeBtn
+{
+    border-image: url(:/images/close.png);
+}
+QPushButton#closeBtn:hover
+{
+    border-image: url(:/images/close_hover.png);
+}
+QPushButton#closeBtn:pressed
+{
+    border-image: url(:/images/close.png);
+}
+    /*皮肤按钮*/
+QPushButton#skinBtn
+{
+    border-image: url(:/images/skin.png);
+}
+QPushButton#skinBtn:hover
+{
+    border-image: url(:/images/skin_hover.png);
+}
+QPushButton#skinBtn:pressed
+{
+    border-image: url(:/images/skin.png);
+}
+    /*返回按钮*/
+QPushButton#backBtn
+{
+border-image: url(:/images/back.png);
+}
+QPushButton#backBtn:hover
+{
+border-image: url(:/images/back_hover.png);
+}
+
+
+/*竖直滚动条*/
+QScrollBar
+{
+    /*background: transparent;*/
+    background: #eee;
+    border-color: #999;
+    width: 4px;
+}
+QScrollBar::handle
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #B1B1B1, stop:1 #c4c4c4);
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+        stop: 0 #5DCCFF, stop: 1 #1874CD);
+
+    border:2px solid transparent;
+    border-radius:5px;
+}
+
+QScrollBar::sub-line
+{
+    background-color: transparent;
+}
+QScrollBar::add-line
+{
+    background: transparent;
+}
+/*榜单*/
+QListWidget
+{
+    background-color: transparent;
+    border:transparent;
+}
+/*播放列表*/
+QTableWidget::item:selected
+{
+     border: 1px solid #6a6ea9;
+}
+QTableWidget::item:selected:!active
+{
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #6a6ea9, stop: 1 #888dd9);
+}
+
+QHeaderView::section
+{
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #616161, stop: 0.5 #505050,
+                                      stop: 0.6 #434343, stop:1 #656565);
+    color: white;
+    padding-left: 4px;
+    border: 1px solid #6c6c6c;
+}
+
+/*自定义的Tablewidget*/
+QTableWidget#dafaultWidget
+{
+    /*border-image: url(:/skin/BKImage/1.jpg);*/
+    background-color: transparent;
+    /*border: 2px groove gray;*/
+    border: transparent;
+    /*border: 2px solid #6a6ea9*/;
+    /*border-radius: 10px*/;
+    padding: 5px 4px;
+}
+
+QTableWidget#collectWidget
+{
+    /*border-image: url(:/skin/BKImage/1.jpg);*/
+    background-color: transparent;
+    /*border: 2px groove gray;*/
+    border:transparent;
+    /*border: 2px solid #6a6ea9*/;
+    /*border-radius: 10px*/;
+    padding: 5px 4px;
+}
+/*滑动条样式*/
+QSlider::groove:horizontal
+{
+    border: 1px solid #4A708B;
+    background: #C0C0C0;
+    height: 5px;
+    border-radius: 1px;
+    padding-left:-1px;
+    padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #B1B1B1, stop:1 #c4c4c4);
+    background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #5DCCFF, stop: 1 #1874CD);
+    border: 1px solid #4A708B;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider::add-page:horizontal
+{
+    background: #575757;
+    border: 0px solid #777;
+    height: 10px;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA,
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled
+{
+    background: #00009C;
+    border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled
+{
+    background: #eee;
+    border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled
+{
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
